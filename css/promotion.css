@@ -1,0 +1,147 @@
+@charset "UTF-8";
+body,
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding:0;
+}
+html,body{
+  width: 100%;
+  background-color: black;
+}
+body, input, textarea, select, button, table, form{
+  font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+}
+ol, ul, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.blind{
+  position: absolute;
+  width:1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.header_wrap{
+  z-index: 10;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  width: 100%;
+  height: 44px;
+  background-color: rgb(64,64,64,0.75);
+}
+.header_wrap img{
+  width: 106px;
+  height: 22px;
+  margin: 10px 420px;
+}
+.main_wrap{
+  min-width:1920px;
+}
+.invite_wrap{
+  width: 100%;
+  height: 750px;
+  background-color: #fff;
+}
+.invite_wrap img{
+  display: block;
+  width: 1920px;
+  height: 750px;
+  margin: 0 auto;
+}
+.creator_wrap{
+  width: 100%;
+  height: 822px;
+  background-color: #f9939d;
+}
+.creator_wrap img{
+  display: block;
+  width: 980px;
+  height: 822px;
+  margin: 0 auto;
+}
+.store_wrap{
+  position: relative;
+  width:100%;
+  height: 1084px;
+  background-color: #d5e43f;
+}
+.store_wrap .back img{
+  position: absolute;
+  display: block;
+  width:1920px;
+  height: 1084px;
+  margin: 0 auto;
+  left:50%;
+  transform:translateX(-50%);
+}
+.fruits{
+  position: absolute;
+  width: 980px;
+  margin: 0 auto;
+  left:50%;
+  transform:translateX(-50%);
+  padding-top: 300px;
+}
+.fruits li{
+  float:left;
+  width: 230px;
+  height: 230px;
+  margin-bottom: 140px;
+}
+.fruits li + li{
+  margin-left:20px;
+}
+.fruits li:nth-child(4n+1){
+  margin-left:0;
+}
+.fruits .img_wrap{
+  display: block;
+  width:230px;
+  height:230px;
+}
+.img_wrap img{
+  border-radius: 10px;
+  width: 230px;
+  height: 230px;
+  background:none;
+}
+.fruits .info{
+  width:210px;
+  margin: 0 auto;
+}
+.fruit_title{
+  display: block;
+  font-size: 20px;
+  color:#1b1d21;
+  text-align: center;
+  padding-top:20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.fruit_price{
+  display: block;
+  font-size:28px;
+  color: #1b1d21;
+  font-weight: bold;
+  text-align: center;
+}
+.fruit_price span{
+  font-size:20px;
+  color: #1b1d21;
+}
+.recipe_wrap{
+  width:100%;
+  height: 1030px;
+  background-color: #b893f9;
+}
+.pattern{
+  background-repeat: repeat-x;
+  background-image: url(./image/pattern_recipe.png);
+}
