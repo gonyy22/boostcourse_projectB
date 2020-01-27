@@ -1,11 +1,12 @@
 @charset "UTF-8";
 body,
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
   margin: 0;
   padding:0;
 }
-html,body{
+html,body,.main_wrap{
   width: 100%;
+  min-width:1920px;
 }
 body, input, textarea, select, button, table, form{
   font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
@@ -32,7 +33,7 @@ a{
   right:0;
   width: 100%;
   height: 44px;
-  background-color: rgb(64,64,64,0.75);
+  background-color: rgba(64,64,64,0.75);
 }
 .header_wrap img{
   width: 106px;
@@ -141,11 +142,17 @@ a{
   height: 1030px;
   background-color: #b893f9;
 }
-/*
 .pattern{
-background-repeat: repeat-x;
-background-image: url(https://www.w3schools.com/CSSref/img_tree.gif);
-} */
+  display: block;
+  position: absolute;
+  width: 1920px;
+  height: 185px;
+  background-image: url('../image/pattern_recipe.png');
+  background-repeat: repeat-x;
+  bottom:400px;
+  left:50%;
+  transform:translateX(-50%);
+}
 .section_recipe_wrap{
   position: relative;
   width: 980px;
@@ -179,9 +186,6 @@ background-image: url(https://www.w3schools.com/CSSref/img_tree.gif);
   height: 91px;
   margin: 0 auto;
 }
-.recipe_bt:hover{
-  background: url('./image/go_recipe_over.gif') no-repeat;
-}
 .recipe_link{
   position: absolute;
   width: 310px;
@@ -189,8 +193,83 @@ background-image: url(https://www.w3schools.com/CSSref/img_tree.gif);
   bottom: 98px;
   left: 335px;
 }
+.recipe_link:hover{
+  background: url('../image/go_recipe_over.gif') no-repeat;
+}
 .faq_wrap{
   width:1920px;
-  height:1400px;
+  height:900px;
+  margin:0 auto;
   background-color: #fff;
+}
+.faq_contents_wrap{
+  width:1000px;
+  margin:0 auto;
+  padding: 100px 0;
+}
+.faq_contents_wrap h1{
+  text-align: center;
+  font-size: 60px;
+}
+.faq_contents_shape{
+  border-top: 1px solid #a1a5ad;
+  border-bottom: 1px solid #a1a5ad;
+  display: block;
+  clear: both;
+  content: '';
+}
+.question_wrap .question_img,
+.answer_wrap .answer_img{
+  float: left;
+  width: 21px;
+  height: 20px;
+  padding: 5px 20px;
+}
+.question_title{
+padding: 40px 0;
+}
+.question{
+  line-height: 28px;
+  font-size: 20px;
+  color:#1b1d21;
+  margin-left: 40px;
+}
+.answer_wrap{
+  height: 60px;
+  background-color: #f7f8fa;
+  padding-top:25px;
+}
+.answer{
+  font-size: 16px;
+  color:#60656e;
+  line-height: 28px;
+  margin-left: 40px;
+}
+.detail_click:active .answer_wrap,
+.datail_click .active .answer_wrap{
+  display: block;
+}
+.detail_click{
+  display: block;
+  width: 30px;
+  height: 70px;
+  margin: 50px;
+}
+.down_bt{
+  float: right;
+  width: 23px;
+  height: 12px;
+  padding:20px;
+}
+footer{
+  width:100%;
+  height: 80px;
+  background-color: #e0e4eb;
+  margin-top: 100px;
+}
+.copyright{
+  font-size: 18px;
+  color:#70757d;
+  text-align: center;
+  line-height: 80px;
 }
