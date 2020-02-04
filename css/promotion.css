@@ -35,10 +35,15 @@ a{
   height: 44px;
   background-color: rgba(64,64,64,0.75);
 }
+.logo_link{
+  display: block;
+  width:106px;
+  height: 22px;
+  margin:10px 20%;
+}
 .header_wrap img{
   width: 106px;
   height: 22px;
-  margin: 10px 420px;
 }
 .main_wrap{
   min-width:1920px;
@@ -109,7 +114,50 @@ a{
   border-radius: 10px;
   width: 230px;
   height: 230px;
-  background:none;
+}
+.sale{
+  position: absolute;
+  font-size: 65px;
+  color:#fff;
+  top:50%;
+  left:50%;
+  margin-top:-55px;
+  margin-left: -72px;
+}
+.time{
+  position: absolute;
+  font-size: 20px;
+  color:#fff;
+  top:50%;
+  left:50%;
+  margin-top: 20px;
+  margin-left: -67px;
+}
+.dimmed{
+  background-color: rgba(96,132,2,0.9);
+  display: none;
+  width:230px;
+  height: 230px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 740px;
+  margin-bottom: -230px;
+}
+.dimmed_secondline{
+  background-color: rgba(96,132,2,0.9);
+  display: none;
+  width:230px;
+  height: 230px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 370px;
+  margin-bottom: -230px;
+}
+.img_wrap:hover .dimmed{
+  display: block;
+}
+.img_wrap:hover .dimmed_secondline{
+  display: block;
 }
 .fruits .info{
   width:210px;
@@ -203,13 +251,15 @@ a{
   background-color: #fff;
 }
 .faq_contents_wrap{
-  width:1000px;
+  width:1040px;
   margin:0 auto;
   padding: 100px 0;
 }
-.faq_contents_wrap h1{
-  text-align: center;
-  font-size: 60px;
+.faq_title{
+  display: block;
+  width: 98px;
+  height: 50px;
+  margin: 0 auto 30px;
 }
 .faq_contents_shape{
   border-top: 1px solid #a1a5ad;
@@ -218,32 +268,38 @@ a{
   clear: both;
   content: '';
 }
-.question_wrap .question_img,
-.answer_wrap .answer_img{
+.faq_contents_wrap.faq_contents_shape +.faq_contents_shape{
+  margin-top:5px;
+}
+.question_title{
+  display: block;
+  clear: both;
+  content:'';
+  height: 100%;
+}
+.question_img,
+.answer_img{
   float: left;
   width: 21px;
   height: 20px;
-  padding: 5px 20px;
-}
-.question_title{
-padding: 40px 0;
+  padding: 32px 25px;
 }
 .question{
   line-height: 28px;
   font-size: 20px;
   color:#1b1d21;
   margin-left: 40px;
+  padding: 30px 25px;
 }
 .answer_wrap{
-  height: 60px;
   background-color: #f7f8fa;
-  padding-top:25px;
 }
 .answer{
   font-size: 16px;
   color:#60656e;
   line-height: 28px;
   margin-left: 40px;
+  padding: 32px 25px;
 }
 .detail_click:active .answer_wrap,
 .datail_click .active .answer_wrap{
@@ -251,15 +307,30 @@ padding: 40px 0;
 }
 .detail_click{
   display: block;
-  width: 30px;
-  height: 70px;
-  margin: 50px;
 }
 .down_bt{
+  position: relative;
   float: right;
+  width: 90px;
+  height: auto;
+  padding:20px;
+  border: 0;
+  background-color: #000;
+  cursor: pointer;
+}
+.down_bt img{
   width: 23px;
   height: 12px;
-  padding:20px;
+}
+.return_top{
+  display: block;
+  position: fixed;
+  right:0;
+  bottom:180px;
+}
+.go_top{
+  width: 100px;
+  height: 100px;
 }
 footer{
   width:100%;

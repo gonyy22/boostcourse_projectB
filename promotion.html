@@ -8,7 +8,7 @@
 <body>
   <header>
     <div class="header_wrap">
-      <a href="#"><img src="./image/logo.png" alt="logo"></a>
+      <a href="#" class="logo_link"><img src="./image/logo.png" alt="logo"></a>
     </div>
   </header>
   <main>
@@ -24,6 +24,9 @@
         <ol class="fruits">
           <li>
             <a href="#" class="img_wrap">
+              <div class="dimmed_wrap">
+                <span class="dimmed"><span class="sale">30%</span><span class="time">00:00 ~ 03:00</span></span>
+              </div>
               <img src="./image/thumbnail_apple.jpg" alt="">
             </a>
             <div class="info">
@@ -33,6 +36,9 @@
           </li>
           <li>
             <a href="#" class="img_wrap">
+              <div class="dimmed_wrap">
+                <span class="dimmed"><span class="sale">60%</span><span class="time">04:00 ~ 06:00</span></span>
+              </div>
               <img src="./image/thumbnail_onion.jpg" alt="">
             </a>
             <div class="info">
@@ -42,6 +48,9 @@
           </li>
           <li>
             <a href="#" class="img_wrap">
+              <div class="dimmed_wrap">
+                <span class="dimmed"><span class="sale">20%</span><span class="time">07:00 ~ 09:00</span></span>
+              </div>
               <img src="./image/thumbnail_banana.jpg" alt="">
             </a>
             <div class="info">
@@ -51,6 +60,9 @@
           </li>
           <li>
             <a href="#" class="img_wrap">
+              <div class="dimmed_wrap">
+                <span class="dimmed"><span class="sale">50%</span><span class="time">10:00 ~ 12:00</span></span>
+              </div>
               <img src="./image/thumbnail_kiwi.jpg" alt="">
             </a>
             <div class="info">
@@ -60,6 +72,9 @@
           </li>
           <li>
             <a href="#" class="img_wrap">
+              <div class="dimmed_wrap">
+                <span class="dimmed_secondline"><span class="sale">60%</span><span class="time">13:00 ~ 15:00</span></span>
+              </div>
               <img src="./image/thumbnail_broccoli.jpg" alt="">
             </a>
             <div class="info">
@@ -69,6 +84,9 @@
           </li>
           <li>
             <a href="#" class="img_wrap">
+              <div class="dimmed_wrap">
+                <span class="dimmed_secondline"><span class="sale">30%</span><span class="time">16:00 ~ 18:00</span></span>
+              </div>
               <img src="./image/thumbnail_lemon.jpg" alt="">
             </a>
             <div class="info">
@@ -78,6 +96,9 @@
           </li>
           <li>
             <a href="#" class="img_wrap">
+              <div class="dimmed_wrap">
+                <span class="dimmed_secondline"><span class="sale">20%</span><span class="time">19:00 ~ 21:00</span></span>
+              </div>
               <img src="./image/thumbnail_garlic.jpg" alt="">
             </a>
             <div class="info">
@@ -87,6 +108,9 @@
           </li>
           <li>
             <a href="#" class="img_wrap">
+              <div class="dimmed_wrap">
+                <span class="dimmed_secondline"><span class="sale">50%</span><span class="time">22:00 ~ 24:00</span></span>
+              </div>
               <img src="./image/thumbnail_onion.jpg" alt="">
             </a>
             <div class="info">
@@ -109,23 +133,21 @@
       </div>
       <div class="faq_wrap">
         <div class="faq_contents_wrap">
-          <h1>FAQ</h1>
+          <img src="./image/title_faq.gif" alt="" class="faq_title">
           <ul>
             <li>
               <div class="faq_contents_shape">
-                <div class="question_wrap active">
                   <div class="question_title">
                     <img src="./image/icon_question.gif" alt="" class="question_img">
-                    <a href="#"><img src="./image/icon_arrow_down.gif" alt="" class="down_bt"></a>
+                    <button type="button" name="button" class="down_bt"><img src="./image/icon_arrow_down.gif" alt=""></button>
                     <p class="question">푸드 파트너가 되려면 어떻게 해야하나요? 푸드위드 회원인 경우 푸드 파트너를 따로 신청하지 않아도 되나요?</p>
                   </div>
-                </div>
-              <div class="answer_wrap">
-                <img src="./image/icon_answer.gif" alt="" class="answer_img"><p class="answer">푸드위드에 가입해주세요. 가입 후 푸드파트너 메뉴에 신청해주시면 자격 조건을 확인 후 파트너가 될 수 있어요.</p>
-              </div>
+                  <div class="answer_wrap">
+                    <img src="./image/icon_answer.gif" alt="" class="answer_img"><p class="answer">푸드위드에 가입해주세요. 가입 후 푸드파트너 메뉴에 신청해주시면 자격 조건을 확인 후 파트너가 될 수 있어요.</p>
+                  </div>
                 </div>
             </li>
-            <li>
+            <!-- <li>
               <div class="faq_contents_shape">
                 <div class="question_wrap active">
                   <div class="question_title">
@@ -134,10 +156,10 @@
                     <p class="question">아이디와 비밀번호를 잊어버렸어요</p>
                   </div>
                 </div>
-              <div class="answer_wrap">
-                <img src="./image/icon_answer.gif" alt="" class="answer_img"><p class="answer">로그인 화면 내 [아이디 찾기], [비밀번호 찾기]를 클릭해주세요.<br>회원정보에 있는 이메일로 임시 비밀번호를 전송해드립니다.<br>보안을 위해 임시 비밀번호 로그인 후 비밀번호를 재설정해주세요.</p>
-              </div>
+                <div class="answer_wrap">
+                  <img src="./image/icon_answer.gif" alt="" class="answer_img"><p class="answer">로그인 화면 내 [아이디 찾기], [비밀번호 찾기]를 클릭해주세요.<br>회원정보에 있는 이메일로 임시 비밀번호를 전송해드립니다.<br>보안을 위해 임시 비밀번호 로그인 후 비밀번호를 재설정해주세요.</p>
                 </div>
+              </div>
             </li>
             <li>
               <div class="faq_contents_shape">
@@ -148,7 +170,7 @@
                     <p class="question">레시피에 사용한 제품을 알고 싶어요</p>
                   </div>
                 </div>
-                </div>
+              </div>
             </li>
             <li>
               <div class="faq_contents_shape">
@@ -159,7 +181,7 @@
                     <p class="question">레시피를 저장하고 싶어요</p>
                   </div>
                 </div>
-                </div>
+              </div>
             </li>
             <li>
               <div class="faq_contents_shape">
@@ -170,10 +192,13 @@
                     <p class="question">푸드 크리에이터는 상시 신청이 가능한가요?</p>
                   </div>
                 </div>
-                </div>
-            </li>
+              </div>
+            </li> -->
           </ul>
         </div>
+      </div>
+      <div class="return_top">
+        <a href="#"><img src="./image/go_top.gif" alt="" class="go_top"></a>
       </div>
     </div>
   </main>
