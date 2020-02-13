@@ -290,7 +290,7 @@ a{
 }
 .faq_wrap{
   width:100%;
-  height:900px;
+  height: auto;
   margin:0 auto;
   background-color: #fff;
 }
@@ -320,6 +320,9 @@ a{
 .question_title.active + .answer_wrap{
   display: block;
 }
+.quesrion_title > button{
+    background: url('../image/icon_arrow_up.gif') no-repeat center center;
+}
 .down_bt{
   position: absolute;
   display: block;
@@ -330,6 +333,8 @@ a{
   border: 0;
   background-color: #fff;
   cursor: pointer;
+  background: url('../image/icon_arrow_down.gif') no-repeat center center;
+
 }
 .down_bt img{
   width: 23px;
