@@ -13,32 +13,32 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
+  display: block;
 }
 body {
-    line-height: 1;
+  line-height: 1;
 }
 blockquote, q {
-    quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 body, input, textarea, select, button, table, form{
   font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
@@ -163,8 +163,7 @@ a{
   color:#fff;
   top:50%;
   left:50%;
-  margin-top:-55px;
-  margin-left: -70px;
+  margin:-55px 0 0 -70px;
 }
 .time{
   position: absolute;
@@ -172,8 +171,7 @@ a{
   color:#fff;
   top:50%;
   left:50%;
-  margin-top: 20px;
-  margin-left: -64px;
+  margin: 20px 0 0 -64px;
 }
 .dimmed{
   background-color: rgba(96,132,2,0.9);
@@ -206,7 +204,6 @@ a{
   margin: 0 auto;
 }
 .fruit_title{
-  display: block;
   font-size: 20px;
   color:#1b1d21;
   text-align: center;
@@ -216,7 +213,6 @@ a{
   white-space: nowrap;
 }
 .fruit_price{
-  display: block;
   font-size:28px;
   color: #1b1d21;
   font-weight: bold;
@@ -262,14 +258,14 @@ a{
   position: absolute;
   width: 480px;
   height: 482px;
-  bottom: 248px;
+  bottom: 249px;
   left: 0px;
 }
 .tart_link{
   position: absolute;
   width: 480px;
   height: 482px;
-  bottom: 248px;
+  bottom: 249px;
   left: 500px;
 }
 .recipe_bt{
@@ -320,8 +316,11 @@ a{
 .question_title.active + .answer_wrap{
   display: block;
 }
-.quesrion_title > button{
-    background: url('../image/icon_arrow_up.gif') no-repeat center center;
+.question_title.active > .down_bt{
+  background: url('../image/icon_arrow_up.gif') no-repeat center center;
+}
+.question_title.active > .open{
+  content: "닫힘";
 }
 .down_bt{
   position: absolute;
@@ -334,7 +333,6 @@ a{
   background-color: #fff;
   cursor: pointer;
   background: url('../image/icon_arrow_down.gif') no-repeat center center;
-
 }
 .down_bt img{
   width: 23px;
