@@ -320,7 +320,10 @@ a{
   background: url('../image/icon_arrow_up.gif') no-repeat center center;
 }
 .question_title.active > .open{
-  content: "닫힘";
+  display: none;
+}
+.question_title.active > .open:after{
+  content: '닫힘';
 }
 .down_bt{
   position: absolute;
