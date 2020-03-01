@@ -16,7 +16,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -63,14 +62,11 @@ a{
   top:0;
   left:0;
   right:0;
-  width: 100%;
   height: 44px;
   background-color: rgba(64,64,64,0.75);
 }
 .logo_link{
   display: block;
-  width:106px;
-  height: 22px;
   margin:10px 20%;
 }
 .header_wrap img{
@@ -79,24 +75,23 @@ a{
 }
 .invite_wrap{
   position: relative;
-  width: 100%;
   height: 750px;
   background-color: #fff;
-}
-.invite_wrap img{
-  position: absolute;
-  height: 750px;
-  margin: 0 auto;
-  left:50%;
-  transform:translateX(-50%);
+  background: url('../image/section_invite.jpg') no-repeat;
+  background-position: center;
 }
 .creator_wrap{
   position: relative;
   min-width: 1920px;
   height: 822px;
   background-color: #f9939d;
+  background-position: center;
   left:50%;
   transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  -o-transform:translateX(-50%);
+  -ms-transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
 }
 .creator_wrap img{
   position: absolute;
@@ -106,10 +101,13 @@ a{
   margin: 0 auto;
   left:50%;
   transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  -o-transform:translateX(-50%);
+  -ms-transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
 }
 .store_wrap{
   position: relative;
-  width:100%;
   height: 1084px;
   background-color: #d5e43f;
 }
@@ -121,6 +119,10 @@ a{
   margin: 0 auto;
   left:50%;
   transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  -o-transform:translateX(-50%);
+  -ms-transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
 }
 .fruits{
   position: absolute;
@@ -128,6 +130,10 @@ a{
   margin: 0 auto;
   left:50%;
   transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  -o-transform:translateX(-50%);
+  -ms-transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
   padding-top: 300px;
 }
 .fruits::after{
@@ -196,7 +202,13 @@ a{
 .img_wrap:hover .dimmed{
   display: block;
 }
+.img_wrap:focus .dimmed{
+  display: block;
+}
 .img_wrap:hover .dimmed_secondline{
+  display: block;
+}
+.img_wrap:focus .dimmed_secondline{
   display: block;
 }
 .fruits .info{
@@ -204,6 +216,7 @@ a{
   margin: 0 auto;
 }
 .fruit_title{
+  display: block;
   font-size: 20px;
   color:#1b1d21;
   text-align: center;
@@ -229,6 +242,10 @@ a{
   background-color: #b893f9;
   left:50%;
   transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  -o-transform:translateX(-50%);
+  -ms-transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
 }
 .pattern{
   display: block;
@@ -240,6 +257,10 @@ a{
   bottom:400px;
   left:50%;
   transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  -o-transform:translateX(-50%);
+  -ms-transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
 }
 .section_recipe_wrap{
   position: relative;
@@ -281,11 +302,10 @@ a{
   bottom: 98px;
   left: 335px;
 }
-.recipe_link:hover{
+.recipe_link:hover,.recipe_link:focus{
   background: url('../image/go_recipe_over.gif') no-repeat;
 }
 .faq_wrap{
-  width:100%;
   height: auto;
   margin:0 auto;
   background-color: #fff;
@@ -391,6 +411,10 @@ a{
   bottom:0;
   left:50%;
   transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  -o-transform:translateX(-50%);
+  -ms-transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
 }
 .copyright{
   font-size: 18px;
