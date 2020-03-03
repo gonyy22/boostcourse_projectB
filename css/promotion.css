@@ -67,7 +67,7 @@ a{
 }
 .logo_link{
   display: block;
-  margin:10px 20%;
+  margin:10px;
 }
 .header_wrap img{
   width: 106px;
@@ -79,13 +79,16 @@ a{
   height: 750px;
   background-color: #fff;
   background: url('../image/section_invite.jpg') no-repeat;
-  background-position: center;
   left:50%;
   transform:translateX(-50%);
   -webkit-transform:translateX(-50%);
   -o-transform:translateX(-50%);
   -ms-transform:translateX(-50%);
   -moz-transform:translateX(-50%);
+}
+.logo_img{
+  width:1000px;
+  margin: 0 auto;
 }
 .creator_wrap{
   position: relative;
