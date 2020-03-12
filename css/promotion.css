@@ -67,84 +67,43 @@ a{
 }
 .logo_link{
   display: block;
-  margin:10px;
-}
-.header_wrap img{
   width: 106px;
   height: 22px;
+  margin: 11px 0;
+}
+.logo_img_wrap{
+  margin-left:400px;
+  background: url('../image/logo.png') no-repeat left center;
 }
 .invite_wrap{
   position: relative;
   min-width: 1920px;
   height: 750px;
-  background-color: #fff;
-  background: url('../image/section_invite.jpg') no-repeat;
-  left:50%;
-  transform:translateX(-50%);
-  -webkit-transform:translateX(-50%);
-  -o-transform:translateX(-50%);
-  -ms-transform:translateX(-50%);
-  -moz-transform:translateX(-50%);
-}
-.logo_img{
-  width:1000px;
-  margin: 0 auto;
+  background: #fff url('../image/section_invite.jpg') no-repeat center;
 }
 .creator_wrap{
   position: relative;
   min-width: 1920px;
   height: 822px;
-  background-color: #f9939d;
-  background-position: center;
-  left:50%;
-  transform:translateX(-50%);
-  -webkit-transform:translateX(-50%);
-  -o-transform:translateX(-50%);
-  -ms-transform:translateX(-50%);
-  -moz-transform:translateX(-50%);
-}
-.creator_wrap img{
-  position: absolute;
-  display: block;
-  width: 980px;
-  height: 822px;
-  margin: 0 auto;
-  left:50%;
-  transform:translateX(-50%);
-  -webkit-transform:translateX(-50%);
-  -o-transform:translateX(-50%);
-  -ms-transform:translateX(-50%);
-  -moz-transform:translateX(-50%);
+  background: #f9939d url('../image/section_creator.jpg') no-repeat center;
 }
 .store_wrap{
   position: relative;
-  height: 1084px;
-  background-color: #d5e43f;
-}
-.store_wrap .back img{
-  position: absolute;
-  display: block;
-  width:1920px;
+  min-width:1920px;
   height: 1084px;
   margin: 0 auto;
-  left:50%;
-  transform:translateX(-50%);
-  -webkit-transform:translateX(-50%);
-  -o-transform:translateX(-50%);
-  -ms-transform:translateX(-50%);
-  -moz-transform:translateX(-50%);
+  background: #d5e43f url('../image/section_store.jpg') no-repeat center;
 }
 .fruits{
   position: absolute;
   width: 980px;
-  margin: 0 auto;
+  padding-top: 300px;
   left:50%;
   transform:translateX(-50%);
   -webkit-transform:translateX(-50%);
   -o-transform:translateX(-50%);
   -ms-transform:translateX(-50%);
   -moz-transform:translateX(-50%);
-  padding-top: 300px;
 }
 .fruits::after{
   display: block;
@@ -164,6 +123,7 @@ a{
   margin-left:0;
 }
 .fruits .img_wrap{
+  position: relative;
   display: block;
   width:230px;
   height:230px;
@@ -190,24 +150,12 @@ a{
   margin: 20px 0 0 -64px;
 }
 .dimmed{
+  position: absolute;
   background-color: rgba(96,132,2,0.9);
   display: none;
   width:230px;
   height: 230px;
   border-radius: 10px;
-  position: absolute;
-  bottom: 740px;
-  margin-bottom: -230px;
-}
-.dimmed_secondline{
-  background-color: rgba(96,132,2,0.9);
-  display: none;
-  width:230px;
-  height: 230px;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 370px;
-  margin-bottom: -230px;
 }
 .img_wrap:hover .dimmed{
   display: block;
@@ -249,16 +197,12 @@ a{
   position: relative;
   min-width: 1920px;
   height: 1030px;
-  background-color: #b893f9;
-  background-image: url('../image/pattern_recipe.png');
-  background-repeat: repeat-x;
-  background-position: center;
-  left:50%;
-  transform:translateX(-50%);
-  -webkit-transform:translateX(-50%);
-  -o-transform:translateX(-50%);
-  -ms-transform:translateX(-50%);
-  -moz-transform:translateX(-50%);
+  background: #b893f9 url('../image/pattern_recipe.png') repeat-x center;
+}
+.recipe_img_wrap{
+  position: relative;
+  display: block;
+  background: url('../image/section_recipe.png') no-repeat 50% 30%;
 }
 .section_recipe_wrap{
   position: relative;
@@ -277,21 +221,15 @@ a{
   position: absolute;
   width: 480px;
   height: 482px;
-  bottom: 249px;
+  bottom: 244px;
   left: 0px;
 }
 .tart_link{
   position: absolute;
   width: 480px;
   height: 482px;
-  bottom: 249px;
+  bottom: 244px;
   left: 500px;
-}
-.recipe_bt{
-  display: block;
-  width: 310px;
-  height: 91px;
-  margin: 0 auto;
 }
 .recipe_link{
   position: absolute;
@@ -299,13 +237,16 @@ a{
   height: 91px;
   bottom: 98px;
   left: 335px;
+  background: url('../image/go_recipe.gif') no-repeat;
 }
-.recipe_link:hover,.recipe_link:focus{
+.recipe_link:hover,
+.recipe_link:focus{
   background: url('../image/go_recipe_over.gif') no-repeat;
 }
 .faq_wrap{
+  min-width: 1920px;
   height: auto;
-  margin:0 auto;
+  margin: 0 auto;
   background-color: #fff;
 }
 .faq_contents_wrap{
@@ -317,6 +258,7 @@ a{
   width: 98px;
   height: 50px;
   margin: 0 auto 30px;
+  background: url('../image/title_faq.gif') no-repeat;
 }
 .faq_contents_shape{
   border-top: 1px solid #a1a5ad;
@@ -341,6 +283,9 @@ a{
   display: none;
 }
 .question_title.active > .open:after{
+  content: '펼침';
+}
+.question_title.none_active > .open:after{
   content: '닫힘';
 }
 .down_bt{
@@ -353,18 +298,27 @@ a{
   border: 0;
   background-color: #fff;
   cursor: pointer;
-  background: url('../image/icon_arrow_down.gif') no-repeat center center;
+  background: url('../image/icon_arrow_down.gif') no-repeat center;
 }
 .down_bt img{
   width: 23px;
   height: 12px;
 }
-.question_img,
-.answer_img{
-  float: left;
+.question_img{
+  position: absolute;
   width: 21px;
   height: 20px;
-  padding: 32px 0 32px 25px;
+  margin: 0 20px;
+  top:40%;
+  background: url('../image/icon_question.gif') no-repeat;
+}
+.answer_img{
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  margin: 0 20px;
+  top:40%;
+  background: url('../image/icon_answer.gif') no-repeat;
 }
 .question{
   line-height: 28px;
@@ -377,6 +331,7 @@ a{
   display: none;
 }
 .answer_wrap{
+  position: relative;
   background-color: #f7f8fa;
 }
 .answer_wrap::after{
@@ -391,15 +346,16 @@ a{
   margin-left: 40px;
   padding: 32px 25px;
 }
-.return_top{
-  display: block;
+.return_top_wrap{
   position: fixed;
   right:0;
   bottom:180px;
 }
-.go_top{
+.return_top{
+  display: block;
   width: 100px;
   height: 100px;
+  background: url('../image/go_top.gif') no-repeat;
 }
 .footer_wrap{
   position: relative;
@@ -407,12 +363,6 @@ a{
   height: 80px;
   background-color: #e0e4eb;
   bottom:0;
-  left:50%;
-  transform:translateX(-50%);
-  -webkit-transform:translateX(-50%);
-  -o-transform:translateX(-50%);
-  -ms-transform:translateX(-50%);
-  -moz-transform:translateX(-50%);
 }
 .copyright{
   font-size: 18px;
