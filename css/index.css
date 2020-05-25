@@ -139,7 +139,7 @@ a{
   color:#fff;
   top:50%;
   left:50%;
-  margin:-55px 0 0 -70px;
+  margin:-48px 0 0 -70px;
 }
 .time{
   position: absolute;
@@ -147,7 +147,7 @@ a{
   color:#fff;
   top:50%;
   left:50%;
-  margin: 20px 0 0 -64px;
+  margin: 25px 0 0 -64px;
 }
 .dimmed{
   position: absolute;
@@ -273,15 +273,6 @@ a{
 .question_title{
   position: relative;
 }
-.question_title.active + .answer_wrap{
-  display: block;
-}
-.question_title.active > .down_bt{
-  background: url('../image/icon_arrow_up.gif') no-repeat center center;
-}
-.question_title.active > .open{
-  display: none;
-}
 .question_title.active > .open:after{
   content: '펼침';
 }
@@ -290,6 +281,7 @@ a{
 }
 .down_bt{
   position: absolute;
+  outline:0;
   display: block;
   right:0;
   width: 90px;

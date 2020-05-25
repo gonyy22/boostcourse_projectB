@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width==device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/promotion.css">
+  <link rel="stylesheet" href="./css/index.css">
   <title>promotion</title>
 </head>
 <body>
@@ -151,7 +151,7 @@
         <ul>
           <li>
             <div class="faq_contents_shape">
-              <div class="question_title active">
+              <div class="question_title">
                 <div class="question_img"><span class="blind">question</span></div>
                 <button type="button" class="down_bt"><span class="blind open">닫힘</span></button>
                 <p class="question">푸드 파트너가 되려면 어떻게 해야하나요? 푸드위드 회원인 경우 푸드 파트너를 따로 신청하지 않아도 되나요?</p>
@@ -164,7 +164,7 @@
           </li>
           <li>
             <div class="faq_contents_shape">
-              <div class="question_title active">
+              <div class="question_title">
                 <div class="question_img"><span class="blind">question</span></div>
                 <button type="button" class="down_bt"><span class="blind open">닫힘</span></button>
                 <p class="question">아이디와 비밀번호를 잊어버렸어요</p>
@@ -177,7 +177,7 @@
           </li>
           <li>
             <div class="faq_contents_shape">
-              <div class="question_title none_active">
+              <div class="question_title">
                 <div class="question_img"><span class="blind">question</span></div>
                 <button type="button" class="down_bt"><span class="blind open">펼침</span></button>
                 <p class="question">레시피에 사용한 제품을 알고 싶어요</p>
@@ -190,7 +190,7 @@
           </li>
           <li>
             <div class="faq_contents_shape">
-              <div class="question_title none_active">
+              <div class="question_title">
                 <div class="question_img"><span class="blind">question</span></div>
                 <button type="button" class="down_bt"><span class="blind open">펼침</span></button>
                 <p class="question">레시피를 저장하고 싶어요</p>
@@ -203,7 +203,7 @@
           </li>
           <li>
             <div class="faq_contents_shape">
-              <div class="question_title none_active">
+              <div class="question_title">
               <div class="question_img"><span class="blind">question</span></div>
                 <button type="button" class="down_bt"><span class="blind open">펼침</span></button>
                 <p class="question">푸드 크리에이터는 상시 신청이 가능한가요?</p>
@@ -226,5 +226,20 @@
       <p class="copyright">&copy; foodwith All Rights Reserved.</p>
     </div>
   </footer>
+  <script type="text/javascript">
+  var acc = document.querySelectorAll(".question_title");
+  
+  for(var i = 0; i < acc.length; i++){
+    acc[i].addEventListener("click", function(){
+      var answer = this.nextElementSibling;
+      if(answer.style.display === "block"){
+        answer.style.display = "none";
+      }
+      else{
+        answer.style.display = "block";
+      }
+    });
+  }
+  </script>
 </body>
 </html>
